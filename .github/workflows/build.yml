@@ -1,6 +1,6 @@
 name: Build TWRP for Samsung A71
 
-on: push: branches: - main pull_request: branches: - main
+on: workflow_dispatch: {} push: branches: - main pull_request: branches: - main
 
 env: BUILD_ROOT: ${{ github.workspace }}/android TWRP_BRANCH: twrp-12.1 DEVICE_TREE_REPO: https://github.com/mehedihjoy0/twrp_samsung_a71.git DEVICE_CODENAME: a71 MAKE_THREADS: ${{ runner.cores }} USE_CCACHE: "1" CCACHE_MAXSIZE: 10G
 
